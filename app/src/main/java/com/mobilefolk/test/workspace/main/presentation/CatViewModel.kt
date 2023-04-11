@@ -2,22 +2,19 @@ package com.mobilefolk.test.workspace.main.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
+import androidx.lifecycle.viewModelScope
 import com.mobilefolk.test.core.utils.Constants
 import com.mobilefolk.test.workspace.main.domain.models.CatImage
 import com.mobilefolk.test.workspace.main.domain.models.ImagePlaceholder
 import com.mobilefolk.test.workspace.main.domain.usecases.GetCatImagesUseCase
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import timber.log.Timber
 
-/*
-* use coroutineScope instead of viewModelScope to memo tabs
-* */
 class CatViewModel constructor(
-  private val getCatImagesUseCase: GetCatImagesUseCase, private val coroutineScope: CoroutineScope
+  private val getCatImagesUseCase: GetCatImagesUseCase
 ) : ViewModel() {
   private var _searching = false
   private val _imagesFlow = MutableStateFlow(mutableListOf<CatImage>())
@@ -29,7 +26,7 @@ class CatViewModel constructor(
     getImages(refresh = true)
   }
   
-  fun retry() = coroutineScope.launch {
+  fun retry() = viewModelScope.launch {
     if (searchSize == 1) {
       getImages(refresh = true)
     } else {
@@ -42,7 +39,7 @@ class CatViewModel constructor(
   
   /* pull to refresh -> refresh: true */
   fun getImages(refresh: Boolean = false) {
-    coroutineScope.launch(Dispatchers.IO) {
+    viewModelScope.launch(Dispatchers.IO) {
       if (_searching) return@launch
       _searching = true
       var previous = if (refresh) mutableListOf() else _imagesFlow.value.toMutableList()

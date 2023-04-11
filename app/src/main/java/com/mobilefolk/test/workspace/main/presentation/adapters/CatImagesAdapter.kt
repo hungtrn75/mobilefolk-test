@@ -93,6 +93,7 @@ class CatImagesAdapter(private val listener: OnImageListener) :
           listener.onTap(getItem(bindingAdapterPosition))
         }
         retryBtn.setOnClickListener {
+          retryBtn.visibility = View.GONE
           loadImage(getItem(bindingAdapterPosition))
         }
       }

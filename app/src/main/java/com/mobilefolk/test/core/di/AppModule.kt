@@ -77,6 +77,6 @@ val useCaseModule = module {
 
 val viewModelModule = module {
   viewModel {
-    CatViewModel(get(), get())
+    CatViewModel(get())
   }
 }
