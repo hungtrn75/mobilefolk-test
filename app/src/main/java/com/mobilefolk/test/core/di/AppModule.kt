@@ -1,8 +1,8 @@
 package com.mobilefolk.test.core.di
 
 import android.content.Context
-import com.mobilefolk.test.core.util.AppInterceptor
-import com.mobilefolk.test.core.util.Constants
+import com.mobilefolk.test.core.utils.AppInterceptor
+import com.mobilefolk.test.core.utils.Constants
 import com.mobilefolk.test.workspace.main.data.remote.CatRemoteDataSource
 import com.mobilefolk.test.workspace.main.data.remote.CatRemoteDataSourceImpl
 import com.mobilefolk.test.workspace.main.data.remote.CatService

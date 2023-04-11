@@ -1,4 +1,4 @@
-package com.mobilefolk.test.core.util
+package com.mobilefolk.test.core.utils
 
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.databind.DeserializationFeature

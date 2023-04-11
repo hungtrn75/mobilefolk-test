@@ -1,8 +1,8 @@
 package com.mobilefolk.test.workspace.main.data.repositories
 
 import arrow.core.Either
-import com.mobilefolk.test.core.util.NetworkError
-import com.mobilefolk.test.workspace.main.data.dto.mapper
+import com.mobilefolk.test.core.utils.NetworkError
+import com.mobilefolk.test.workspace.main.data.dtos.mapper
 import com.mobilefolk.test.workspace.main.data.remote.CatRemoteDataSource
 import com.mobilefolk.test.workspace.main.domain.models.CatImage
 import com.mobilefolk.test.workspace.main.domain.repositories.CatRepo

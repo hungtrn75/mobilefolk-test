@@ -1,7 +1,7 @@
 package com.mobilefolk.test.workspace.main.data.remote
 
-import com.mobilefolk.test.core.util.Constants
-import com.mobilefolk.test.workspace.main.data.dto.CatImageDto
+import com.mobilefolk.test.core.utils.Constants
+import com.mobilefolk.test.workspace.main.data.dtos.CatImageDto
 import retrofit2.http.*
 
 interface CatService {

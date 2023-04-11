@@ -1,4 +1,4 @@
-package com.mobilefolk.test.workspace.main.data.dto
+package com.mobilefolk.test.workspace.main.data.dtos
 
 import com.mobilefolk.test.workspace.main.domain.models.CatImage
 

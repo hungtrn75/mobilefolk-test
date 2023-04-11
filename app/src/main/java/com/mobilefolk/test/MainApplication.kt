@@ -2,8 +2,8 @@ package com.mobilefolk.test
 
 import android.app.Application
 import com.mobilefolk.test.core.di.*
-import com.mobilefolk.test.core.util.DebugTree
-import com.mobilefolk.test.core.util.NotLoggingTree
+import com.mobilefolk.test.core.utils.DebugTree
+import com.mobilefolk.test.core.utils.NotLoggingTree
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin

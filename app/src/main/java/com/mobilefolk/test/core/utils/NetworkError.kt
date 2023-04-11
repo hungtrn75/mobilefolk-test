@@ -1,4 +1,4 @@
-package com.mobilefolk.test.core.util
+package com.mobilefolk.test.core.utils
 
 import org.json.JSONObject
 import retrofit2.HttpException

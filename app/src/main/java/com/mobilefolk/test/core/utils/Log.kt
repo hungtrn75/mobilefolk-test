@@ -1,4 +1,4 @@
-package com.mobilefolk.test.core.util
+package com.mobilefolk.test.core.utils
 
 import androidx.annotation.Nullable
 import timber.log.Timber

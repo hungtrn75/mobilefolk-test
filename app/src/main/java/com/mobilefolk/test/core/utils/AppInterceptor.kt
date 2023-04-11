@@ -1,4 +1,4 @@
-package com.mobilefolk.test.core.util
+package com.mobilefolk.test.core.utils
 
 import android.content.Context
 import okhttp3.Interceptor

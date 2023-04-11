@@ -1,4 +1,4 @@
-package com.mobilefolk.test.core.util
+package com.mobilefolk.test.core.utils
 
 object Constants {
     const val newsApiKey = "bbfb5b50-ec47-4276-8f08-71e3614acfed"

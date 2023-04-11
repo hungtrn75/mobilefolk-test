@@ -1,6 +1,6 @@
 package com.mobilefolk.test.workspace.main.data.remote
 
-import com.mobilefolk.test.workspace.main.data.dto.CatImageDto
+import com.mobilefolk.test.workspace.main.data.dtos.CatImageDto
 
 interface CatRemoteDataSource {
   suspend fun getCatImages(page: Int): List<CatImageDto>
